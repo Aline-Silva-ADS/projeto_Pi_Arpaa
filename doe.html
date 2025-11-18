@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARPAA - Doe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/config.css" />
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- HEADER (padronizado) -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between relative">
+            <div class="flex items-center gap-6">
+                <h1 class="text-2xl font-bold text-teal-600">ARPAA</h1>
+            </div>
+            <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" class="md:hidden text-teal-600 focus:outline-none">
+                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="desktop-nav" class="hidden md:flex gap-8 text-lg font-medium">
+                <a href="index.html" class="hover:text-teal-600 transition">Início</a>
+                <a href="adote.html" class="hover:text-teal-600 transition">Adote</a>
+                <a href="doe.html" class="hover:text-teal-600 transition">Doe</a>
+                <a href="#" class="hover:text-teal-600 transition">Voluntários</a>
+                <a href="sobre.html" class="hover:text-teal-600 transition">Sobre</a>
+            </nav>
+
+            <!-- Mobile dropdown menu (hidden by default) -->
+            <div id="mobile-nav" class="absolute left-0 right-0 top-full bg-white shadow-md md:hidden overflow-hidden" style="max-height:0; transition:max-height .28s ease;">
+                <div class="px-6 py-4 border-b">
+                    <a href="index.html" class="block py-2 text-lg hover:text-teal-600">Início</a>
+                    <a href="adote.html" class="block py-2 text-lg hover:text-teal-600">Adote</a>
+                    <a href="doe.html" class="block py-2 text-lg hover:text-teal-600">Doe</a>
+                    <a href="#" class="block py-2 text-lg hover:text-teal-600">Voluntários</a>
+                    <a href="sobre.html" class="block py-2 text-lg hover:text-teal-600">Sobre</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-28 pb-16 b bg-gradient-to-r from-teal-600 to-teal-400 from-primary to-secondary text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ajude a salvar vidas</h2>
+            <p class="text-xl opacity-90">Sua doação mantém nossos resgates, tratamentos e cuidados funcionando todos os dias.</p>
+        </div>
+    </section>
+
+    <!-- PIX -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-primary mb-4">Doe via PIX</h3>
+            <p class="text-lg mb-6">Chave PIX:</p>
+
+            <div class="bg-white shadow-lg rounded-2xl p-6 inline-block mb-4">
+                <p class="text-xl font-semibold text-gray-800">CNPJ: 00.000.000/0001-00</p>
+            </div>
+
+            <p class="text-gray-600">Qualquer valor ajuda nossos animais resgatados! ❤️</p>
+        </div>
+    </section>
+
+    <!-- LISTA DE NECESSIDADES -->
+    <section class="py-16 bg-gray-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-primary mb-10 text-center">Como você pode ajudar</h3>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <h4 class="text-xl font-bold text-primary mb-4">Ração</h4>
+                    <p>Ração seca e úmida para cães e gatos.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <h4 class="text-xl font-bold text-primary mb-4">Medicamentos</h4>
+                    <p>Vermífugos, antibióticos, pomadas e curativos.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <h4 class="text-xl font-bold text-primary mb-4">Materiais de Limpeza</h4>
+                    <p>Água sanitária, sabão, desinfetante e panos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOAÇÃO RECORRENTE -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-primary mb-6">Doações Mensais</h3>
+            <p class="mb-6 text-gray-700">Você pode se tornar um apoiador mensal da ARPAA e ajudar de forma contínua!</p>
+
+            <a href="#" class="bg-primary text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:opacity-90 transition">
+                Quero ser um apoiador
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-lg">© 2025 ARPAA – Proteção Animal • Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
