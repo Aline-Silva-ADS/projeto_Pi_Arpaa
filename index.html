@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,20 +41,20 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
         }
-        
+
         .btn-primary {
             @apply bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-teal-700 transition-all duration-300 transform hover:-translate-y-1;
         }
-        
+
         .btn-secondary {
             @apply bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-yellow-300 transition-all duration-300 transform hover:-translate-y-1;
         }
-        
+
         .nav-link {
             @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-teal-400 after:transition-all after:duration-300 hover:after:w-full;
         }
@@ -69,7 +70,8 @@
                     <div class="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center">
                         <i class="fas fa-paw text-white text-xl"></i>
                     </div>
-                    <span class="text-2xl font-bold bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent">ARPAA</span>
+                    <span
+                        class="text-2xl font-bold bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent">ARPAA</span>
                 </a>
 
                 <nav class="hidden md:flex items-center space-x-8">
@@ -87,12 +89,14 @@
             </div>
 
             <!-- Mobile menu -->
-            <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg rounded-b-xl overflow-hidden transition-all duration-300">
+            <div id="mobile-menu"
+                class="md:hidden hidden bg-white shadow-lg rounded-b-xl overflow-hidden transition-all duration-300">
                 <div class="px-4 pt-2 pb-4 space-y-2">
                     <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Início</a>
                     <a href="animais.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Adote</a>
                     <a href="doe.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Doe</a>
-                    <a href="voluntarios.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Voluntários</a>
+                    <a href="voluntarios.html"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Voluntários</a>
                     <a href="sobre.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Sobre</a>
                     <a href="contato.html" class="block btn-primary text-center mt-2">Contato</a>
                 </div>
@@ -104,10 +108,14 @@
     <section class="pt-40 pb-16 bg-gradient-to-r from-teal-600 to-teal-500 text-white relative overflow-hidden">
         <!-- Decorative elements -->
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full transform translate-x-32 -translate-y-32"></div>
-            <div class="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full transform -translate-x-48 translate-y-48"></div>
+            <div
+                class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full transform translate-x-32 -translate-y-32">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full transform -translate-x-48 translate-y-48">
+            </div>
         </div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="text-center md:text-left">
@@ -115,7 +123,8 @@
                         Ajudando a transformar vidas, <span class="text-yellow-300">uma pata de cada vez</span>
                     </h1>
                     <p class="text-xl text-gray-100 mb-8 max-w-xl mx-auto md:mx-0">
-                        A ARPAA resgata, cuida e encontra novos lares para animais abandonados, promovendo o amor e respeito por todos os seres vivos.
+                        A ARPAA resgata, cuida e encontra novos lares para animais abandonados, promovendo o amor e
+                        respeito por todos os seres vivos.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <a href="#adotar" class="btn-primary inline-flex items-center justify-center">
@@ -128,9 +137,8 @@
                 </div>
                 <div class="relative hidden md:block">
                     <div class="relative z-10 transform hover:scale-105 transition-transform duration-500">
-                        <img src="https://images.unsplash.com/photo-1544568100-847a948585b9" 
-                             alt="Cachorros felizes" 
-                             class="rounded-2xl shadow-2xl border-4 border-white/20">
+                        <img src="https://images.unsplash.com/photo-1544568100-847a948585b9" alt="Cachorros felizes"
+                            class="rounded-2xl shadow-2xl border-4 border-white/20">
                     </div>
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 rounded-2xl -z-10"></div>
                     <div class="absolute -top-6 -left-6 w-24 h-24 bg-teal-400 rounded-2xl -z-10"></div>
@@ -167,52 +175,62 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 bg-teal-100 text-teal-800 text-sm font-semibold rounded-full mb-4">Sobre Nós</span>
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Quem é a <span class="text-teal-600">ARPAA</span>?</h2>
+                <span
+                    class="inline-block px-4 py-1 bg-teal-100 text-teal-800 text-sm font-semibold rounded-full mb-4">Sobre
+                    Nós</span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Quem é a <span class="text-teal-600">ARPAA</span>?
+                </h2>
                 <div class="w-24 h-1.5 bg-teal-500 mx-auto rounded-full"></div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="relative">
                     <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" 
-                             alt="Animais Resgatados" 
-                             class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105">
+                        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Animais Resgatados"
+                            class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105">
                     </div>
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 rounded-2xl -z-10"></div>
                     <div class="absolute -top-6 -left-6 w-24 h-24 bg-teal-400 rounded-2xl -z-10"></div>
                 </div>
-                
+
                 <div>
                     <div class="space-y-6">
                         <p class="text-lg text-gray-700 leading-relaxed">
-                            A <span class="font-semibold text-teal-600">Associação de Resgate, Proteção e Amparo Animal (ARPAA)</span> é uma organização sem fins lucrativos que atua há mais de 10 anos no resgate e proteção de animais em situação de vulnerabilidade.
+                            A <span class="font-semibold text-teal-600">Associação de Resgate, Proteção e Amparo Animal
+                                (ARPAA)</span> é uma organização sem fins lucrativos que atua há mais de 10 anos no
+                            resgate e proteção de animais em situação de vulnerabilidade.
                         </p>
                         <p class="text-lg text-gray-700 leading-relaxed">
-                            Nossa missão é resgatar, reabilitar e encontrar lares amorosos para animais abandonados, além de promover a conscientização sobre posse responsável e bem-estar animal.
+                            Nossa missão é resgatar, reabilitar e encontrar lares amorosos para animais abandonados,
+                            além de promover a conscientização sobre posse responsável e bem-estar animal.
                         </p>
                         <div class="grid grid-cols-2 gap-4 mt-8">
                             <div class="flex items-start space-x-3">
-                                <div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600">
                                     <i class="fas fa-heart"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900">Missão</h4>
-                                    <p class="text-sm text-gray-600">Promover o bem-estar animal através de resgates e adoções responsáveis.</p>
+                                    <p class="text-sm text-gray-600">Promover o bem-estar animal através de resgates e
+                                        adoções responsáveis.</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-3">
-                                <div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600">
                                     <i class="fas fa-eye"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900">Visão</h4>
-                                    <p class="text-sm text-gray-600">Um mundo onde todos os animais vivam com dignidade e amor.</p>
+                                    <p class="text-sm text-gray-600">Um mundo onde todos os animais vivam com dignidade
+                                        e amor.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="pt-4">
-                            <a href="sobre.html" class="inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 transition-colors">
+                            <a href="sobre.html"
+                                class="inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 transition-colors">
                                 Saiba mais sobre nós
                                 <i class="fas fa-arrow-right ml-2"></i>
                             </a>
@@ -227,53 +245,70 @@
     <section class="py-20 bg-gradient-to-br from-yellow-300 to-yellow-400 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10">
             <div class="absolute top-10 right-10 w-32 h-32 bg-white rounded-full animate-float"></div>
-            <div class="absolute bottom-20 left-10 w-20 h-20 bg-white rounded-full animate-float" style="animation-delay: 1s;"></div>
-            <div class="absolute top-1/2 left-1/3 w-16 h-16 bg-white rounded-full animate-float" style="animation-delay: 2s;"></div>
+            <div class="absolute bottom-20 left-10 w-20 h-20 bg-white rounded-full animate-float"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/3 w-16 h-16 bg-white rounded-full animate-float"
+                style="animation-delay: 2s;"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 bg-white/30 text-yellow-800 text-sm font-semibold rounded-full mb-4">Como Ajudar</span>
+                <span
+                    class="inline-block px-4 py-1 bg-white/30 text-yellow-800 text-sm font-semibold rounded-full mb-4">Como
+                    Ajudar</span>
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">Faça a Diferença</h2>
                 <div class="w-24 h-1.5 bg-white mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-gray-700 max-w-2xl mx-auto">Sua ajuda é essencial para continuarmos nosso trabalho. Conheça as formas de contribuir:</p>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">Sua ajuda é essencial para continuarmos nosso
+                    trabalho. Conheça as formas de contribuir:</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card Doação -->
-                <div class="group bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
-                    <div class="w-20 h-20 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors">
+                <div
+                    class="group bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
+                    <div
+                        class="w-20 h-20 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors">
                         <i class="fas fa-hand-holding-heart text-3xl text-yellow-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Doe</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Sua contribuição ajuda a fornecer ração, medicamentos e cuidados veterinários para nossos animais resgatados.</p>
-                    <a href="doe.html" class="inline-flex items-center text-yellow-700 font-semibold group-hover:text-yellow-800 transition-colors">
+                    <p class="text-gray-600 mb-6 leading-relaxed">Sua contribuição ajuda a fornecer ração, medicamentos
+                        e cuidados veterinários para nossos animais resgatados.</p>
+                    <a href="doe.html"
+                        class="inline-flex items-center text-yellow-700 font-semibold group-hover:text-yellow-800 transition-colors">
                         Saiba como doar
                         <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
                 <!-- Card Adoção -->
-                <div class="group bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
-                    <div class="w-20 h-20 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors">
+                <div
+                    class="group bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
+                    <div
+                        class="w-20 h-20 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors">
                         <i class="fas fa-paw text-3xl text-yellow-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Adote</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Dê um lar cheio de amor para um de nossos animais. Eles estão esperando por uma segunda chance de ser feliz.</p>
-                    <a href="adote.html" class="inline-flex items-center text-yellow-700 font-semibold group-hover:text-yellow-800 transition-colors">
+                    <p class="text-gray-600 mb-6 leading-relaxed">Dê um lar cheio de amor para um de nossos animais.
+                        Eles estão esperando por uma segunda chance de ser feliz.</p>
+                    <a href="adote.html"
+                        class="inline-flex items-center text-yellow-700 font-semibold group-hover:text-yellow-800 transition-colors">
                         Ver animais
                         <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
                 <!-- Card Voluntariado -->
-                <div class="group bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
-                    <div class="w-20 h-20 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors">
+                <div
+                    class="group bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20">
+                    <div
+                        class="w-20 h-20 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors">
                         <i class="fas fa-hands-helping text-3xl text-yellow-600"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Seja Voluntário</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Junte-se à nossa equipe e participe ativamente dos resgates, cuidados diários e eventos especiais.</p>
-                    <a href="voluntarios.html" class="inline-flex items-center text-yellow-700 font-semibold group-hover:text-yellow-800 transition-colors">
+                    <p class="text-gray-600 mb-6 leading-relaxed">Junte-se à nossa equipe e participe ativamente dos
+                        resgates, cuidados diários e eventos especiais.</p>
+                    <a href="voluntarios.html"
+                        class="inline-flex items-center text-yellow-700 font-semibold group-hover:text-yellow-800 transition-colors">
                         Como participar
                         <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
                     </a>
@@ -286,22 +321,26 @@
     <section id="adotar" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 bg-teal-100 text-teal-800 text-sm font-semibold rounded-full mb-4">Nossos Amigos</span>
+                <span
+                    class="inline-block px-4 py-1 bg-teal-100 text-teal-800 text-sm font-semibold rounded-full mb-4">Nossos
+                    Amigos</span>
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Animais para Adoção</h2>
                 <div class="w-24 h-1.5 bg-teal-500 mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Conheça alguns dos nossos peludinhos que estão à procura de um lar cheio de amor e carinho.</p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Conheça alguns dos nossos peludinhos que estão à
+                    procura de um lar cheio de amor e carinho.</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                     <div class="relative overflow-hidden h-64">
-                        <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22" 
-                             alt="Lua" 
-                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22" alt="Lua"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute top-4 right-4">
-                            <span class="bg-yellow-400 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full">Disponível</span>
+                            <span
+                                class="bg-yellow-400 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full">Disponível</span>
                         </div>
                     </div>
                     <div class="p-6">
@@ -310,20 +349,26 @@
                             <span class="text-sm text-gray-500">Fêmea • 3 anos</span>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded-full">Porte Médio</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Vacinada</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Castrada</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded-full">Porte
+                                Médio</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Vacinada</span>
+                            <span
+                                class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Castrada</span>
                         </div>
-                        <p class="text-gray-600 mb-6">Lua é uma cadela dócil e brincalhona. Adora passeios e se dá bem com crianças e outros animais.</p>
+                        <p class="text-gray-600 mb-6">Lua é uma cadela dócil e brincalhona. Adora passeios e se dá bem
+                            com crianças e outros animais.</p>
                         <div class="flex justify-between items-center">
                             <a href="adote-lua.html" class="btn-primary text-sm px-6 py-2">
                                 <i class="fas fa-paw mr-2"></i> Conhecer Lua
                             </a>
                             <div class="flex space-x-2">
-                                <button class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="far fa-heart"></i>
                                 </button>
-                                <button class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="fas fa-share-alt"></i>
                                 </button>
                             </div>
@@ -332,14 +377,15 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                     <div class="relative overflow-hidden h-64">
-                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" 
-                             alt="Tito" 
-                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Tito"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute top-4 right-4">
-                            <span class="bg-yellow-400 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full">Disponível</span>
+                            <span
+                                class="bg-yellow-400 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full">Disponível</span>
                         </div>
                     </div>
                     <div class="p-6">
@@ -348,20 +394,26 @@
                             <span class="text-sm text-gray-500">Macho • 1 ano</span>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded-full">Porte Pequeno</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Vacinado</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Castrado</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded-full">Porte
+                                Pequeno</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Vacinado</span>
+                            <span
+                                class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Castrado</span>
                         </div>
-                        <p class="text-gray-600 mb-6">Tito é um gatinho brincalhão e carinhoso. Adora um colo e brincar com bolinhas de papel.</p>
+                        <p class="text-gray-600 mb-6">Tito é um gatinho brincalhão e carinhoso. Adora um colo e brincar
+                            com bolinhas de papel.</p>
                         <div class="flex justify-between items-center">
                             <a href="adote-tito.html" class="btn-primary text-sm px-6 py-2">
                                 <i class="fas fa-paw mr-2"></i> Conhecer Tito
                             </a>
                             <div class="flex space-x-2">
-                                <button class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="far fa-heart"></i>
                                 </button>
-                                <button class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="fas fa-share-alt"></i>
                                 </button>
                             </div>
@@ -370,14 +422,15 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                     <div class="relative overflow-hidden h-64">
-                        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" 
-                             alt="Mari" 
-                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Mari"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute top-4 right-4">
-                            <span class="bg-yellow-400 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full">Disponível</span>
+                            <span
+                                class="bg-yellow-400 text-yellow-900 text-xs font-semibold px-3 py-1 rounded-full">Disponível</span>
                         </div>
                     </div>
                     <div class="p-6">
@@ -386,20 +439,26 @@
                             <span class="text-sm text-gray-500">Fêmea • 2 anos</span>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded-full">Porte Pequeno</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Vacinada</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Castrada</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded-full">Porte
+                                Pequeno</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Vacinada</span>
+                            <span
+                                class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Castrada</span>
                         </div>
-                        <p class="text-gray-600 mb-6">Mari é uma cachorrinha tranquila e carinhosa. Adora um carinho na barriga e dormir no colo.</p>
+                        <p class="text-gray-600 mb-6">Mari é uma cachorrinha tranquila e carinhosa. Adora um carinho na
+                            barriga e dormir no colo.</p>
                         <div class="flex justify-between items-center">
                             <a href="adote-mari.html" class="btn-primary text-sm px-6 py-2">
                                 <i class="fas fa-paw mr-2"></i> Conhecer Mari
                             </a>
                             <div class="flex space-x-2">
-                                <button class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="far fa-heart"></i>
                                 </button>
-                                <button class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="fas fa-share-alt"></i>
                                 </button>
                             </div>
@@ -409,7 +468,8 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="animais.html" class="inline-flex items-center px-8 py-3 border border-teal-600 text-teal-600 font-semibold rounded-lg hover:bg-teal-50 transition-colors">
+                <a href="animais.html"
+                    class="inline-flex items-center px-8 py-3 border border-teal-600 text-teal-600 font-semibold rounded-lg hover:bg-teal-50 transition-colors">
                     Ver todos os animais
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -421,7 +481,8 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 bg-teal-100 text-teal-800 text-sm font-semibold rounded-full mb-4">Depoimentos</span>
+                <span
+                    class="inline-block px-4 py-1 bg-teal-100 text-teal-800 text-sm font-semibold rounded-full mb-4">Depoimentos</span>
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">O que dizem sobre nós</h2>
                 <div class="w-24 h-1.5 bg-teal-500 mx-auto rounded-full"></div>
             </div>
@@ -431,7 +492,8 @@
                 <div class="bg-white p-8 rounded-2xl shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="flex-shrink-0">
-                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Ana Silva">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/43.jpg"
+                                alt="Ana Silva">
                         </div>
                         <div class="ml-4">
                             <h4 class="text-lg font-semibold text-gray-900">Ana Silva</h4>
@@ -444,14 +506,17 @@
                             </p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Adotei a Luna há 6 meses e foi a melhor decisão da minha vida. A equipe da ARPAA foi incrível em todo o processo, desde o primeiro contato até a adaptação em casa. Recomendo de olhos fechados!"</p>
+                    <p class="text-gray-600 italic">"Adotei a Luna há 6 meses e foi a melhor decisão da minha vida. A
+                        equipe da ARPAA foi incrível em todo o processo, desde o primeiro contato até a adaptação em
+                        casa. Recomendo de olhos fechados!"</p>
                 </div>
 
                 <!-- Depoimento 2 -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="flex-shrink-0">
-                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Eduardo">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg"
+                                alt="Carlos Eduardo">
                         </div>
                         <div class="ml-4">
                             <h4 class="text-lg font-semibold text-gray-900">Carlos Eduardo</h4>
@@ -464,14 +529,17 @@
                             </p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Sou voluntário na ARPAA há 1 ano e posso dizer que é uma experiência incrível. Ver a transformação dos animais resgatados e a alegria das famílias que adotam não tem preço. Trabalho sério e dedicado!"</p>
+                    <p class="text-gray-600 italic">"Sou voluntário na ARPAA há 1 ano e posso dizer que é uma
+                        experiência incrível. Ver a transformação dos animais resgatados e a alegria das famílias que
+                        adotam não tem preço. Trabalho sério e dedicado!"</p>
                 </div>
 
                 <!-- Depoimento 3 -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg">
                     <div class="flex items-center mb-6">
                         <div class="flex-shrink-0">
-                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Fernanda Oliveira">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg"
+                                alt="Fernanda Oliveira">
                         </div>
                         <div class="ml-4">
                             <h4 class="text-lg font-semibold text-gray-900">Fernanda Oliveira</h4>
@@ -484,7 +552,9 @@
                             </p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic">"Adotamos nosso gatinho Thor na ARPAA e foi tudo perfeito. O processo foi muito bem conduzido, com toda orientação necessária. Hoje ele é um membro muito amado da nossa família. Obrigada por esse trabalho maravilhoso!"</p>
+                    <p class="text-gray-600 italic">"Adotamos nosso gatinho Thor na ARPAA e foi tudo perfeito. O
+                        processo foi muito bem conduzido, com toda orientação necessária. Hoje ele é um membro muito
+                        amado da nossa família. Obrigada por esse trabalho maravilhoso!"</p>
                 </div>
             </div>
         </div>
@@ -499,7 +569,8 @@
                 <a href="doe.html" class="btn-secondary inline-flex items-center justify-center">
                     <i class="fas fa-donate mr-2"></i> Fazer Doação
                 </a>
-                <a href="contato.html" class="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center border border-white/20">
+                <a href="contato.html"
+                    class="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center border border-white/20">
                     <i class="fas fa-envelope mr-2"></i> Entrar em Contato
                 </a>
             </div>
@@ -518,7 +589,8 @@
                         </div>
                         <span class="text-2xl font-bold text-white">ARPAA</span>
                     </div>
-                    <p class="text-sm text-gray-400 mb-4">Associação de Resgate, Proteção e Amparo Animal. Transformando vidas, uma pata de cada vez.</p>
+                    <p class="text-sm text-gray-400 mb-4">Associação de Resgate, Proteção e Amparo Animal. Transformando
+                        vidas, uma pata de cada vez.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white transition-colors">
                             <i class="fab fa-facebook-f"></i>
@@ -539,13 +611,18 @@
                 <div>
                     <h4 class="text-white font-semibold text-lg mb-4">Links Rápidos</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Início</a></li>
-                        <li><a href="sobre.html" class="text-gray-400 hover:text-white transition-colors">Sobre Nós</a></li>
-                        <li><a href="animais.html" class="text-gray-400 hover:text-white transition-colors">Adoção</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Início</a>
+                        </li>
+                        <li><a href="sobre.html" class="text-gray-400 hover:text-white transition-colors">Sobre Nós</a>
+                        </li>
+                        <li><a href="animais.html" class="text-gray-400 hover:text-white transition-colors">Adoção</a>
+                        </li>
                         <li><a href="doe.html" class="text-gray-400 hover:text-white transition-colors">Doações</a></li>
-                        <li><a href="voluntarios.html" class="text-gray-400 hover:text-white transition-colors">Voluntariado</a></li>
+                        <li><a href="voluntarios.html"
+                                class="text-gray-400 hover:text-white transition-colors">Voluntariado</a></li>
                         <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="contato.html" class="text-gray-400 hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="contato.html" class="text-gray-400 hover:text-white transition-colors">Contato</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -566,7 +643,7 @@
                             <span class="text-white">Fechado</span>
                         </li>
                     </ul>
-                    
+
                     <h4 class="text-white font-semibold text-lg mt-6 mb-4">Contato</h4>
                     <ul class="space-y-2 text-sm">
                         <li class="flex items-start">
@@ -579,7 +656,8 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-envelope mr-3 text-teal-400"></i>
-                            <a href="mailto:contato@arpaa.org" class="hover:text-white transition-colors">contato@arpaa.org</a>
+                            <a href="mailto:contato@arpaa.org"
+                                class="hover:text-white transition-colors">contato@arpaa.org</a>
                         </li>
                     </ul>
                 </div>
@@ -587,15 +665,19 @@
                 <!-- Coluna 4: Newsletter -->
                 <div>
                     <h4 class="text-white font-semibold text-lg mb-4">Newsletter</h4>
-                    <p class="text-sm text-gray-400 mb-4">Inscreva-se para receber nossas novidades e histórias de adoção.</p>
+                    <p class="text-sm text-gray-400 mb-4">Inscreva-se para receber nossas novidades e histórias de
+                        adoção.</p>
                     <form class="space-y-3">
                         <div>
-                            <input type="text" placeholder="Seu nome" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            <input type="text" placeholder="Seu nome"
+                                class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
                         </div>
                         <div>
-                            <input type="email" placeholder="Seu e-mail" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                            <input type="email" placeholder="Seu e-mail"
+                                class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-teal-500">
                         </div>
-                        <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                        <button type="submit"
+                            class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
                             Inscrever-se
                         </button>
                     </form>
@@ -605,10 +687,12 @@
             <div class="border-t border-gray-800 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-sm text-gray-500 text-center md:text-left mb-4 md:mb-0">
-                        &copy; 2025 ARPAA - Associação de Resgate, Proteção e Amparo Animal. Todos os direitos reservados.
+                        &copy; 2025 ARPAA - Associação de Resgate, Proteção e Amparo Animal. Todos os direitos
+                        reservados.
                     </p>
                     <div class="flex space-x-6">
-                        <a href="#" class="text-sm text-gray-500 hover:text-white transition-colors">Política de Privacidade</a>
+                        <a href="#" class="text-sm text-gray-500 hover:text-white transition-colors">Política de
+                            Privacidade</a>
                         <a href="#" class="text-sm text-gray-500 hover:text-white transition-colors">Termos de Uso</a>
                         <a href="#" class="text-sm text-gray-500 hover:text-white transition-colors">Mapa do Site</a>
                     </div>
@@ -618,7 +702,8 @@
     </footer>
 
     <!-- Botão Voltar ao Topo -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-teal-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-teal-700 transition-all duration-300 opacity-0 invisible">
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 bg-teal-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-teal-700 transition-all duration-300 opacity-0 invisible">
         <i class="fas fa-arrow-up"></i>
     </button>
 
@@ -629,16 +714,16 @@
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
-       
-            // Show/hide back to top button
-            if (window.scrollY > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
-            } else {
-                backToTopButton.classList.add('opacity-0', 'invisible');
-                backToTopButton.classList.remove('opacity-100', 'visible');
-            }
-        });
+
+        // Show/hide back to top button
+        if (window.scrollY > 300) {
+            backToTopButton.classList.remove('opacity-0', 'invisible');
+            backToTopButton.classList.add('opacity-100', 'visible');
+        } else {
+            backToTopButton.classList.add('opacity-0', 'invisible');
+            backToTopButton.classList.remove('opacity-100', 'visible');
+        }
+
 
         // Mobile menu toggle
         mobileMenuButton.addEventListener('click', () => {
@@ -692,4 +777,5 @@
         }
     </script>
 </body>
+
 </html>
