@@ -61,7 +61,7 @@
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-900 antialiased">
+<body class="bg-gray-400 text-gray-900 antialiased overflow-x-hidden">
     <!-- NAVBAR -->
     <header class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-md" id="navbar">
         <div class="w-full px-4 sm:px-6 lg:px-8">
@@ -75,12 +75,12 @@
                 </a>
 
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Início</a>
+                    <a href="index.html" class="text-teal-600 font-semibold">Início</a>
                     <a href="animais.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Adote</a>
                     <a href="doe.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Doe</a>
                     <a href="voluntarios.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Voluntários</a>
                     <a href="sobre.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Sobre</a>
-                    <a href="contato.html" class="btn-primary text-sm">Contato</a>
+                    <a href="contato.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Contato</a>
                 </nav>
 
                 <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -92,13 +92,13 @@
             <div id="mobile-menu"
                 class="md:hidden hidden bg-white shadow-lg rounded-b-xl overflow-hidden transition-all duration-300">
                 <div class="px-4 pt-2 pb-4 space-y-2">
-                    <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Início</a>
+                    <a href="index.html" class="block px-4 py-2 text-teal-600 font-semibold hover:bg-gray-100 rounded-lg">Início</a>
                     <a href="animais.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Adote</a>
                     <a href="doe.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Doe</a>
                     <a href="voluntarios.html"
                         class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Voluntários</a>
                     <a href="sobre.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Sobre</a>
-                    <a href="contato.html" class="block btn-primary text-center mt-2">Contato</a>
+                    <a href="contato.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Contato</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                         Ajudando a transformar vidas, <span class="text-yellow-300">uma pata de cada vez</span>
                     </h1>
                     <p class="text-xl text-gray-100 mb-8 max-w-xl mx-auto md:mx-0">
@@ -127,10 +127,10 @@
                         respeito por todos os seres vivos.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#adotar" class="btn-primary inline-flex items-center justify-center">
+                        <a href="#adotar" class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                             <i class="fas fa-heart mr-2"></i> Quero Adotar
                         </a>
-                        <a href="#doar" class="btn-secondary inline-flex items-center justify-center">
+                        <a href="#doar" class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-700 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                             <i class="fas fa-hand-holding-heart mr-2"></i> Quero Doar
                         </a>
                     </div>
@@ -151,19 +151,19 @@
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="p-6 bg-blue-50 rounded-xl hover:shadow-lg transition-shadow">
                     <div class="text-4xl font-bold text-teal-600 mb-2" id="resgates">500+</div>
                     <p class="text-gray-600">Animais Resgatados</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="p-6 bg-blue-50 rounded-xl hover:shadow-lg transition-shadow">
                     <div class="text-4xl font-bold text-teal-600 mb-2" id="adocoes">300+</div>
                     <p class="text-gray-600">Adoções Realizadas</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="p-6 bg-blue-50 rounded-xl hover:shadow-lg transition-shadow">
                     <div class="text-4xl font-bold text-teal-600 mb-2" id="castracoes">200+</div>
                     <p class="text-gray-600">Castrações</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
+                <div class="p-6 bg-blue-50 rounded-xl hover:shadow-lg transition-shadow">
                     <div class="text-4xl font-bold text-teal-600 mb-2" id="voluntarios">50+</div>
                     <p class="text-gray-600">Voluntários</p>
                 </div>
@@ -184,13 +184,12 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="relative">
+                <div class="relative max-w-md">
                     <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Animais Resgatados"
-                            class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105">
+                            class="w-full h-96 object-cover transition-transform duration-500 hover:scale-105">
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow-400 rounded-2xl -z-10"></div>
-                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-teal-400 rounded-2xl -z-10"></div>
+                   
                 </div>
 
                 <div>
@@ -228,13 +227,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pt-4">
-                            <a href="sobre.html"
-                                class="inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 transition-colors">
-                                Saiba mais sobre nós
-                                <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -243,13 +235,6 @@
 
     <!-- COMO POSSO AJUDAR -->
     <section class="py-20 bg-gradient-to-br from-yellow-300 to-yellow-400 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10">
-            <div class="absolute top-10 right-10 w-32 h-32 bg-white rounded-full animate-float"></div>
-            <div class="absolute bottom-20 left-10 w-20 h-20 bg-white rounded-full animate-float"
-                style="animation-delay: 1s;"></div>
-            <div class="absolute top-1/2 left-1/3 w-16 h-16 bg-white rounded-full animate-float"
-                style="animation-delay: 2s;"></div>
-        </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
@@ -365,10 +350,6 @@
                             <div class="flex space-x-2">
                                 <button
                                     class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                                <button
-                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="fas fa-share-alt"></i>
                                 </button>
                             </div>
@@ -408,10 +389,6 @@
                                 <i class="fas fa-paw mr-2"></i> Conhecer Tito
                             </a>
                             <div class="flex space-x-2">
-                                <button
-                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
-                                    <i class="far fa-heart"></i>
-                                </button>
                                 <button
                                     class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="fas fa-share-alt"></i>
@@ -455,10 +432,6 @@
                             <div class="flex space-x-2">
                                 <button
                                     class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
-                                    <i class="far fa-heart"></i>
-                                </button>
-                                <button
-                                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-600 hover:text-teal-600 transition-colors">
                                     <i class="fas fa-share-alt"></i>
                                 </button>
                             </div>
@@ -469,7 +442,7 @@
 
             <div class="text-center mt-12">
                 <a href="animais.html"
-                    class="inline-flex items-center px-8 py-3 border border-teal-600 text-teal-600 font-semibold rounded-lg hover:bg-teal-50 transition-colors">
+                    class="inline-flex items-center px-8 py-3 border border-teal-600 text-teal-600 font-semibold rounded-lg hover:bg-teal-600 hover:text-white transition-colors">
                     Ver todos os animais
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
