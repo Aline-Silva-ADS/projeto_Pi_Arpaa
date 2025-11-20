@@ -47,3 +47,57 @@ body {
 .nav-link:hover::after {
     width: 100%;
 }
+
+.filtro {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db; /* cinza */
+    background: #f3f4f6;        /* cinza claro */
+    color: #4b5563;             /* cinza escuro */
+    transition: 0.2s;
+}
+
+.filtro:hover {
+    background: #e5e7eb;
+}
+
+.filtro.ativo {
+    border-color: #0d9488;  /* teal-600 */
+    background: #ccfbf1;    /* teal-100 */
+    color: #0f766e;
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    z-index: 20;
+}
+
+.filtro {
+    padding: 8px 16px;
+    border-radius: 9999px;
+    border: 1px solid #d1d5db;
+    background: white;
+    transition: 0.2s;
+}
+
+.filtro:hover {
+    background: #0d9488;
+    color: white;
+}
+
+.filtro-ativo {
+    background: #0d9488 !important;
+    color: white !important;
+    border-color: #0d9488 !important;
+}
+
