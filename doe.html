@@ -2,34 +2,13 @@
 <html lang="pt-BR" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARPAA - Doe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARPAA - Proteção Animal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/config.css" />
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        teal: {
-                            400: '#2dd4bf',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                        },
-                        yellow: {
-                            300: '#fde68a',
-                            400: '#fbbf24',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/config.css">
+    <script src="assets/js/tailwindconfig.js"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900">
@@ -56,7 +35,7 @@
                 </button>
             </div>
             <div id="mobile-menu"
-                class="md:hidden hidden bg-white shadow-lg rounded-b-xl overflow-hidden transition-all duration-300">
+                class="md:hidden hidden bg-white rounded-b-xl overflow-hidden transition-all duration-300">
                 <div class="px-4 pt-2 pb-4 space-y-2">
                     <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Início</a>
                     <a href="adote.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Adote</a>
@@ -153,22 +132,28 @@
                     itens que fazem diferença no dia a dia dos nossos animais.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="group bg-white rounded-2xl shadow-lg p-8 text-center border-t-4 border-yellow-400 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg p-8 text-center border-t-4 border-yellow-400 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div
+                        class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow-200 transition-colors">
                         <i class="fas fa-dog text-yellow-500 text-3xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-2">Ração</h4>
                     <p class="text-gray-600">Ração seca e úmida para cães e gatos.</p>
                 </div>
-                <div class="group bg-white rounded-2xl shadow-lg p-8 text-center border-t-4 border-teal-400 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-200 transition-colors">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg p-8 text-center border-t-4 border-teal-400 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div
+                        class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-200 transition-colors">
                         <i class="fas fa-pills text-teal-500 text-3xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-2">Medicamentos</h4>
                     <p class="text-gray-600">Vermífugos, antibióticos, pomadas e curativos.</p>
                 </div>
-                <div class="group bg-white rounded-2xl shadow-lg p-8 text-center border-t-4 border-blue-400 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg p-8 text-center border-t-4 border-blue-400 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div
+                        class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
                         <i class="fas fa-soap text-blue-500 text-3xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-2">Materiais de Limpeza</h4>
@@ -296,7 +281,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

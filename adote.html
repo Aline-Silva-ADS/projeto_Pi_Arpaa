@@ -2,34 +2,13 @@
 <html lang="pt-BR" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARPAA - Adote</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARPAA - Proteção Animal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/config.css" />
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        teal: {
-                            400: '#2dd4bf',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                        },
-                        yellow: {
-                            300: '#fde68a',
-                            400: '#fbbf24',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/config.css">
+    <script src="assets/js/tailwindconfig.js"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900 antialiased overflow-x-hidden">
@@ -49,7 +28,6 @@
                     <a href="index.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Início</a>
                     <a href="adote.html" class="text-teal-600 font-semibold">Adote</a>
                     <a href="doe.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Doe</a>
-                    <a href="voluntarios.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Voluntários</a>
                     <a href="sobre.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Sobre</a>
                     <a href="contato.html" class="nav-link text-gray-700 hover:text-teal-600 py-2">Contato</a>
                 </nav>
@@ -61,14 +39,12 @@
 
             <!-- Mobile menu -->
             <div id="mobile-menu"
-                class="md:hidden hidden bg-white shadow-lg rounded-b-xl overflow-hidden transition-all duration-300">
+                class="md:hidden hidden bg-white rounded-b-xl overflow-hidden transition-all duration-300">
                 <div class="px-4 pt-2 pb-4 space-y-2">
                     <a href="index.html"
                         class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Início</a>
                     <a href="adote.html" class="block px-4 py-2 text-teal-600 font-semibold hover:bg-gray-100 rounded-lg">Adote</a>
                     <a href="doe.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Doe</a>
-                    <a href="voluntarios.html"
-                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Voluntários</a>
                     <a href="sobre.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Sobre</a>
                     <a href="contato.html"
                         class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Contato</a>
@@ -338,7 +314,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

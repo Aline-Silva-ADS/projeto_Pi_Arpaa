@@ -1,35 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARPAA - Sobre</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARPAA - Proteção Animal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/config.css" />
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        teal: {
-                            400: '#2dd4bf',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                        },
-                        yellow: {
-                            300: '#fde68a',
-                            400: '#fbbf24',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/config.css">
+    <script src="assets/js/tailwindconfig.js"></script>
 </head>
 
 <body class="bg-white text-gray-800">
@@ -57,7 +36,7 @@
                 </button>
             </div>
             <div id="mobile-menu"
-                class="md:hidden hidden bg-white shadow-lg rounded-b-xl overflow-hidden transition-all duration-300">
+                class="md:hidden hidden bg-white rounded-b-xl overflow-hidden transition-all duration-300">
                 <div class="px-4 pt-2 pb-4 space-y-2">
                     <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Início</a>
                     <a href="adote.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Adote</a>
@@ -93,22 +72,22 @@
     </section>
 
     <!-- HISTÓRIA -->
-    <section class="max-w-6xl mx-auto py-16 px-6">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
+    <section class="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Nossa História</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nossa História</h2>
                 <div class="w-24 h-1.5 bg-teal-500 mb-6"></div>
-                <p class="text-lg leading-relaxed mb-4">
+                <p class="text-base md:text-lg leading-relaxed mb-4">
                     A ARPAA nasceu do desejo de um grupo de voluntários de Aparecida em transformar a realidade
                     dos animais abandonados. Com poucos recursos, mas muita determinação, iniciamos o resgate e
                     cuidado de cães e gatos em situação de vulnerabilidade.
                 </p>
-                <p class="text-lg leading-relaxed">
+                <p class="text-base md:text-lg leading-relaxed">
                     Com o apoio da comunidade, ampliamos nosso trabalho para incluir campanhas de adoção,
                     acolhimento temporário, programas de castração e ações educativas.
                 </p>
             </div>
-            <div class="flex justify-center">
+            <div class="flex justify-center mt-8 md:mt-0">
                 <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80"
                     alt="Nossa História ARPAA" class="rounded-2xl shadow-lg w-full max-w-xs object-cover">
             </div>
@@ -116,18 +95,20 @@
     </section>
 
     <!-- PRESIDENTE DA ONG -->
-    <section class="max-w-6xl mx-auto py-16 px-6">
-        <div class="grid md:grid-cols-10 gap-10 items-center">
-            <div class="md:col-span-4 flex md:justify-start justify-center order-1 md:order-none">
+    <section class="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-10 gap-10 items-center">
+            <div class="md:col-span-4 flex justify-center md:justify-start mb-8 md:mb-0">
                 <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Presidente ARPAA"
-                    class="rounded-2xl shadow-lg w-full max-w-xs object-cover md:ml-0 ml-auto">
+                    class="rounded-2xl shadow-lg w-full max-w-xs object-cover mx-auto md:mx-0">
             </div>
-            <div class="md:col-span-6 order-2 md:order-none">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Presidente da <span class="text-teal-600">ARPAA</span>
+            <div class="md:col-span-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Presidente da <span
+                        class="text-teal-600">ARPAA</span>
                 </h2>
                 <div class="w-24 h-1.5 bg-teal-500 mb-6"></div>
-                <h4 class="text-2xl font-semibold text-gray-900 mb-2 font-sans">João Batista</h4>
-                <p class="text-gray-700 text-lg max-w-2xl mb-4 font-sans">João Batista é o presidente da ARPAA,
+                <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2 font-sans">João Batista</h4>
+                <p class="text-gray-700 text-base md:text-lg max-w-2xl mb-4 font-sans">João Batista é o presidente da
+                    ARPAA,
                     responsável por liderar a equipe, coordenar projetos e representar a ONG em ações sociais e eventos.
                     Com dedicação e paixão pelos animais, João inspira todos a fazerem a diferença na causa animal.</p>
             </div>
@@ -136,40 +117,40 @@
 
     <!-- EQUIPE -->
     <section class="bg-gray-100 py-16">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-teal-600 mb-4">Nossa Equipe</h2>
-            <p class="text-lg mb-10 max-w-3xl">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nossa Equipe</h2>
+            <p class="text-base md:text-lg mb-10 max-w-3xl">
                 Somos formados por voluntários apaixonados por animais: cuidadores, resgatadores,
                 veterinários parceiros e apoiadores que tornam tudo possível.
             </p>
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div
                     class="group bg-white rounded-2xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Equipe ARPAA"
                         class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-md group-hover:scale-105 transition-transform duration-300">
-                    <h4 class="text-2xl font-semibold text-gray-900 mb-2 font-sans">Ana Souza</h4>
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2 font-sans">Ana Souza</h4>
                     <p class="text-gray-600 text-base font-sans">Coordenadora</p>
                 </div>
                 <div
                     class="group bg-white rounded-2xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Equipe ARPAA"
                         class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-md group-hover:scale-105 transition-transform duration-300">
-                    <h4 class="text-2xl font-semibold text-gray-900 mb-2 font-sans">Carlos Lima</h4>
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2 font-sans">Carlos Lima</h4>
                     <p class="text-gray-600 text-base font-sans">Veterinário</p>
                 </div>
                 <div
                     class="group bg-white rounded-2xl shadow-lg p-8 text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
                     <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Equipe ARPAA"
                         class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-md group-hover:scale-105 transition-transform duration-300">
-                    <h4 class="text-2xl font-semibold text-gray-900 mb-2 font-sans">Juliana Alves</h4>
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-2 font-sans">Juliana Alves</h4>
                     <p class="text-gray-600 text-base font-sans">Resgatadora</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- MISSÃO E VALORES -->
-    <section class="max-w-6xl mx-auto py-16 px-6">
-        <h2 class="text-4xl font-bold text-teal-600 mb-4 text-center">Missão e Valores
+    <section class="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">Missão e Valores
         </h2>
         <div class="w-24 h-1.5 bg-teal-500 mx-auto rounded-full mb-10"></div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -195,10 +176,10 @@
                 <p class="text-gray-700 text-base">Educar a comunidade sobre bem-estar animal.</p>
             </div>
             <div class="bg-white rounded-2xl shadow-lg p-8 text-center flex flex-col items-center justify-center">
-                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                    <i class="fas fa-ban text-red-500 text-3xl"></i>
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-green-500 text-3xl"></i>
                 </div>
-                <h4 class="text-xl font-bold text-red-600 mb-2">Proteção</h4>
+                <h4 class="text-xl font-bold text-green-600 mb-2">Proteção</h4>
                 <p class="text-gray-700 text-base">Combater maus-tratos e abandono.</p>
             </div>
         </div>
@@ -275,15 +256,7 @@
         </div>
     </footer>
 
-    <!-- SCRIPT PARA O MENU MOBILE -->
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

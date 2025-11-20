@@ -1,135 +1,49 @@
-/* ===============================
-   CONFIGURAÇÃO DE CORES ARPAA
-   Edite este arquivo para mudar
-   rapidamente o tema do site.
-   =============================== */
+/* Arquivo de estilos principal do projeto ARPAA */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-:root {
-  /* Paleta baseada no feed Instagram da ARPAA */
-  --arpa-yellow: #F2C94C; /* amarelo principal */
-  --arpa-teal: #6EC6C5;   /* turquesa */
-  --arpa-green: #8CBF75;  /* verde musgo */
-  --arpa-terra: #C69C6D;  /* marrom terra */
-  --arpa-beige: #EDE0CE;  /* bege claro */
-  --arpa-white: #FFFFFF;
-  --arpa-text: #2E2E2E;
-  --arpa-muted: #6B6B6B;
-  --gray-100: #F7F7F7;
-  --shadow-color: rgba(46,46,46,0.06);
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
-
-/* ===============================
-   Classes Personalizadas p/ Tailwind
-   Use junto com class="bg-primary" etc.
-   =============================== */
-
-@layer base {
-  /* Backgrounds */
-  .bg-primary { background-color: var(--primary-color); }
-  .bg-primary-light { background-color: var(--primary-color-light); }
-  .bg-primary-dark { background-color: var(--primary-color-dark); }
-
-  .bg-secondary { background-color: var(--secondary-color); }
-  .bg-secondary-light { background-color: var(--secondary-color-light); }
-  .bg-secondary-dark { background-color: var(--secondary-color-dark); }
-
-  .bg-neutral { background-color: var(--neutral-color); }
-
-  /* Textos */
-  .text-primary { color: var(--primary-color); }
-  .text-secondary { color: var(--secondary-color); }
-  .text-neutral { color: var(--neutral-color); }
-
-  /* Bordas */
-  .border-primary { border-color: var(--primary-color); }
-  .border-secondary { border-color: var(--secondary-color); }
-  .border-neutral { border-color: var(--neutral-color); }
+.btn-primary {
+    background-color: #14b8a6;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(20,184,166,0.15);
+    transition: all 0.3s;
 }
-
-/* Base typography */
-html { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-h1,h2,h3,h4,h5 { font-family: 'Poppins', system-ui, sans-serif; color:var(--arpa-text) }
-
-/* Buttons */
-.btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; padding:.6rem 1rem; border-radius:10px; font-weight:600; cursor:pointer; }
-.btn-primary{ background:var(--arpa-yellow); color:var(--arpa-text); }
-.btn-ghost{ background:transparent; border:1px solid var(--arpa-teal); color:var(--arpa-teal); }
-
-/* Cards */
-.card{ background:var(--arpa-white); border-radius:14px; box-shadow:0 8px 20px var(--shadow-color); overflow:hidden }
-.card-body{ padding:1rem }
-
-/* Decorative paw */
-.paw{ width:22px; height:22px; display:inline-block; background-image:url('../icons/paw.svg'); background-size:contain; background-repeat:no-repeat }
-
-/* Blob background helper */
-.blob { border-radius:24px; background:linear-gradient(180deg,var(--arpa-beige),#fff); padding:1rem }
-
-/* Help section: light yellow background with repeating paw pattern */
-.help-section {
-  background-color: var(--arpa-yellow-light);
+.btn-primary:hover {
+    background-color: #0d9488;
+    transform: translateY(-4px);
 }
-
-#desktop-nav a[aria-current="page"],
-#mobile-nav a[aria-current="page"] {
-  color: var(--arpa-teal);
-  font-weight: 700;
+.btn-secondary {
+    background-color: #fbbf24;
+    color: #222;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(251,191,36,0.15);
+    transition: all 0.3s;
 }
-
-#mobile-nav a[aria-current="page"] { background:var(--gray-100); border-radius:6px; padding-left:.5rem }
-
-/* Text highlight helpers */
-.hl-yellow { color: var(--arpa-yellow); font-weight:700 }
-.hl-teal { color: var(--arpa-teal); font-weight:700 }
-
-/* Event card specifics */
-.event-card{ position:relative; overflow:visible }
-.event-card .blob-deco{ position:absolute; right:-18px; top:-18px; width:84px; height:84px; border-radius:50%; opacity:0.9 }
-.event-card .paw-icon{ position:absolute; left:12px; top:12px; width:28px; height:28px }
-
-/* Small responsive tweaks */
-@media(max-width:640px){
-  .blob { padding:.75rem }
+.btn-secondary:hover {
+    background-color: #fde68a;
+    transform: translateY(-4px);
 }
-
-/* Help cards inside the highlighted section */
-.help-section .help-card{ background:var(--arpa-white); padding:2rem; border-radius:14px; box-shadow:0 10px 24px var(--shadow-color); text-align:center; transition:transform .18s ease, box-shadow .18s ease }
-.help-section .help-card:hover{ transform:translateY(-6px); box-shadow:0 14px 30px rgba(46,46,46,0.12) }
-.help-section .icon-wrapper{ width:64px; height:64px; border-radius:12px; background:var(--arpa-teal); display:flex; align-items:center; justify-content:center; margin:0 auto 1rem }
-.help-section .icon-wrapper img{ width:32px; height:32px; display:block }
-.help-section .help-card h4{ margin-top:0.25rem }
-.help-section .help-card p{ color:var(--arpa-muted) }
-.help-section .help-card a{ display:inline-block; margin-top:0.5rem }
-
-
-/* ===============================
-   Menu ativo (desktop e mobile)
-   - Usa atributo aria-current="page" quando presente
-   - Destaca com cor e underline visual
-   =============================== */
-
-#desktop-nav a[aria-current="page"],
-#mobile-nav a[aria-current="page"] {
-  color: var(--secondary-color);
-  font-weight: 700;
+.nav-link {
+    position: relative;
 }
-
-#desktop-nav a[aria-current="page"]::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 100%;
-  background: var(--primary-color);
-  margin-top: 2px; /* reduzido para subir o underline alguns pixels */
-  border-radius: 4px;
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2dd4bf;
+    transition: width 0.3s;
 }
-
-#mobile-nav a[aria-current="page"] {
-  background: var(--gray-100);
-  border-radius: 6px;
-  padding-left: 0.5rem;
+.nav-link:hover::after {
+    width: 100%;
 }
-
-
-
-

@@ -8,57 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/config.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        teal: {
-                            400: '#2dd4bf',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                        },
-                        yellow: {
-                            300: '#fde68a',
-                            400: '#fbbf24',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .btn-primary {
-            @apply bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-teal-700 transition-all duration-300 transform hover:-translate-y-1;
-        }
-
-        .btn-secondary {
-            @apply bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-yellow-300 transition-all duration-300 transform hover:-translate-y-1;
-        }
-
-        .nav-link {
-            @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-teal-400 after:transition-all after:duration-300 hover:after:w-full;
-        }
-    </style>
+    <script src="assets/js/tailwindconfig.js"></script>
+    
 </head>
 
 <body class="bg-gray-400 text-gray-900 antialiased overflow-x-hidden">
@@ -89,12 +40,13 @@
 
             <!-- Mobile menu -->
             <div id="mobile-menu"
-                class="md:hidden hidden bg-white shadow-lg rounded-b-xl overflow-hidden transition-all duration-300">
+                class="md:hidden hidden bg-white rounded-b-xl overflow-hidden transition-all duration-300">
                 <div class="px-4 pt-2 pb-4 space-y-2">
                     <a href="index.html"
                         class="block px-4 py-2 text-teal-600 font-semibold hover:bg-gray-100 rounded-lg">Início</a>
                     <a href="adote.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Adote</a>
                     <a href="doe.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Doe</a>
+
                     <a href="sobre.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Sobre</a>
                     <a href="contato.html"
                         class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Contato</a>
@@ -630,79 +582,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script>
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        const backToTopButton = document.getElementById('back-to-top');
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-
-        // Show/hide back to top button
-        function updateBackToTopVisibility() {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.remove('opacity-0', 'invisible');
-                backToTopButton.classList.add('opacity-100', 'visible');
-            } else {
-                backToTopButton.classList.add('opacity-0', 'invisible');
-                backToTopButton.classList.remove('opacity-100', 'visible');
-            }
-        }
-        updateBackToTopVisibility();
-        window.addEventListener('scroll', updateBackToTopVisibility);
-
-
-        // Mobile menu toggle
-        mobileMenuButton.addEventListener('click', () => {
-            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('block');
-        });
-
-        // Back to top button
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Animate numbers
-        function animateValue(id, start, end, duration) {
-            const obj = document.getElementById(id);
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                obj.innerHTML = value + (id === 'voluntarios' ? '+' : '+');
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
-        }
-
-        // Intersection Observer para animação dos números
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateValue('resgates', 0, 500, 2000);
-                    animateValue('adocoes', 0, 300, 2000);
-                    animateValue('castracoes', 0, 200, 2000);
-                    animateValue('voluntarios', 0, 50, 2000);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        // Observar a seção de estatísticas
-        const statsSection = document.querySelector('.bg-white');
-        if (statsSection) {
-            observer.observe(statsSection);
-        }
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

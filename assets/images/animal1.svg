@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <rect width="800" height="600" fill="#EDE0CE" rx="20"/>
-  <g transform="translate(120,80)">
-    <circle cx="200" cy="160" r="120" fill="#C69C6D" opacity="0.15"/>
-    <text x="200" y="320" font-family="Poppins, sans-serif" font-size="36" fill="#6B6B6B" text-anchor="middle">Animal 1</text>
-  </g>
-</svg>
