@@ -83,7 +83,7 @@
             </div>
 
             <button id="limparFiltros"
-                class="filtro px-4 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
+                class="filtro px-4 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-teal-600 transition">
                 Limpar filtros
             </button>
         </div>
@@ -132,6 +132,12 @@
                 </div>
             </div>
 
+        </div>
+        
+        <!-- Filtros Selecionados -->
+        <div id="filtrosSelecionados" class="mt-4 hidden">
+            <p class="text-sm text-gray-600 mb-2">Filtros aplicados:</p>
+            <div id="listFiltrosSelecionados" class="flex flex-wrap gap-2"></div>
         </div>
     </div>
 </section>
@@ -396,7 +402,7 @@ function fecharModal() {
 </script>
 <!-- MODAL DE DETALHES DO ANIMAL -->
 <div id="modalPet" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden justify-center items-center px-4 z-[999]">
-    <div class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 relative">
+    <div class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 pt-12 relative">
 
         <!-- Botão fechar -->
         <button onclick="fecharModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
@@ -431,7 +437,7 @@ function fecharModal() {
 
         <button onclick="abrirFormAdocao()" 
             class="w-full bg-teal-600 text-white py-2 rounded-xl text-lg font-semibold hover:bg-teal-700 transition">
-            Quero adotar ❤️
+            Quero adotar 
         </button>
     </div>
 </div>
@@ -499,6 +505,7 @@ function abrirModal(nome, info, descricao, imagens) {
 
 function atualizarFoto() {
     document.getElementById("modalImgPrincipal").src = fotos[fotoAtual];
+    atualizarMiniaturas();
 }
 
 function proximaFoto() {
@@ -514,6 +521,19 @@ function fotoAnterior() {
 function irParaFoto(i) {
     fotoAtual = i;
     atualizarFoto();
+}
+
+function atualizarMiniaturas() {
+    const miniaturas = document.querySelectorAll('#modalMiniaturas img');
+    miniaturas.forEach((img, i) => {
+        if (i === fotoAtual) {
+            img.classList.remove('border-transparent');
+            img.classList.add('border-teal-600');
+        } else {
+            img.classList.remove('border-teal-600');qu
+            img.classList.add('border-transparent');
+        }
+    });
 }
 
 function fecharModal() {
@@ -601,22 +621,26 @@ document.addEventListener("click", (e) => {
 });
 
 // -------------- AÇÃO DOS FILTROS --------------------
-document.querySelectorAll(".filtro").forEach(btn => {
-    btn.addEventListener("click", () => {
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(".filtro").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
 
-        const categoria = btn.parentElement.id.replace("menu-", "");  
-        const filtro = btn.textContent.trim();
+            const categoria = btn.parentElement.id.replace("menu-", "");  
+            const filtro = btn.textContent.trim();
 
-        if (filtrosSelecionados[categoria].includes(filtro)) {
-            filtrosSelecionados[categoria] =
-                filtrosSelecionados[categoria].filter(f => f !== filtro);
-            btn.classList.remove("filtro-ativo");
-        } else {
-            filtrosSelecionados[categoria].push(filtro);
-            btn.classList.add("filtro-ativo");
-        }
+            if (filtrosSelecionados[categoria].includes(filtro)) {
+                filtrosSelecionados[categoria] =
+                    filtrosSelecionados[categoria].filter(f => f !== filtro);
+                btn.classList.remove("filtro-ativo");
+            } else {
+                filtrosSelecionados[categoria].push(filtro);
+                btn.classList.add("filtro-ativo");
+            }
 
-        aplicarFiltros();
+            aplicarFiltros();
+        });
     });
 });
 
@@ -644,6 +668,8 @@ function aplicarFiltros() {
 
         card.style.display = mostrar ? "block" : "none";
     });
+    
+    atualizarFiltrosSelecionados();
 }
 
 // -------------- LIMPAR FILTROS --------------------
@@ -663,6 +689,30 @@ document.getElementById("limparFiltros").addEventListener("click", () => {
 
     aplicarFiltros();
 });
+
+// -------------- ATUALIZAR FILTROS SELECIONADOS --------------------
+function atualizarFiltrosSelecionados() {
+    const container = document.getElementById('listFiltrosSelecionados');
+    const secaoFiltros = document.getElementById('filtrosSelecionados');
+    
+    let filtrosAtivos = [];
+    
+    for (const categoria in filtrosSelecionados) {
+        filtrosSelecionados[categoria].forEach(filtro => {
+            filtrosAtivos.push(filtro);
+        });
+    }
+    
+    if (filtrosAtivos.length > 0) {
+        secaoFiltros.classList.remove('hidden');
+        container.innerHTML = filtrosAtivos.map(filtro => 
+            `<span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">${filtro}</span>`
+        ).join('');
+    } else {
+        secaoFiltros.classList.add('hidden');
+        container.innerHTML = '';
+    }
+}
 </script>
 <script>
 document.querySelectorAll(".menu-categoria").forEach(botao => {
